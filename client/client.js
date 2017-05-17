@@ -14,12 +14,14 @@ console.log('coinbase : ' + coinbase);
 
 console.log();
 
-web3.eth.getBalance(web3.eth.accounts[0], function(err, balance) {console.log('accounts[0].balance : ' + balance.toNumber())})
+web3.eth.getBalance(web3.eth.accounts[0], function(err, balance) {
+    console.log('accounts[0].balance : ' + balance.toNumber())
+})
 
 console.log();
 
-web3.eth.getBlock('pending', function(error, result){
-    if(!error)
+web3.eth.getBlock('pending', function(error, result) {
+    if (!error)
         console.log('pending block : ' + result)
     else
         console.error('pending block : ' + error);
@@ -27,9 +29,13 @@ web3.eth.getBlock('pending', function(error, result){
 
 console.log();
 
-web3.eth.getBlock(47, function(error, result){
-    if(!error)
+web3.eth.getBlock(47, function(error, result) {
+    if (!error)
         console.log('47 block : ' + result)
     else
         console.error('47 block : ' + error);
 })
+
+
+
+//web3.miner.start();

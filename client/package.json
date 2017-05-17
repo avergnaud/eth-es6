@@ -9,7 +9,7 @@
     "web3": "0.14.0"
   },
   "scripts": {
-    "start": "babel-node --presets es2015 client.js",
+    "start": "babel-node --presets es2015 insere_contrat.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

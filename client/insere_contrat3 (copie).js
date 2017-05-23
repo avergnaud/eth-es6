@@ -3,8 +3,8 @@ pragma solidity ^0.4.11;
 
 contract greeter {
 
-    address public owner;
-    address public vendeur;
+    address owner;
+    address vendeur;
     uint public montant;
 
     function greeter(address _vendeur) payable {
@@ -26,10 +26,6 @@ function() payable {
 
     function getMontant() constant returns (uint) {
         return montant;
-    }
-
-    function withdraw() {
-        vendeur.transfer(montant);
     }
 
 }

@@ -11,3 +11,5 @@ puis > miner.start()
 
 /eth-client-serveur/client
 npm start
+
+pour compiler le smart contract j'ai utilisé https://remix.ethereum.org/
